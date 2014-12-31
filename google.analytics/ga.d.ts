@@ -43,6 +43,7 @@ declare module UniversalAnalytics {
         (command: string, poly: string, opt_poly?: {}): UniversalAnalytics.Tracker;
         (command: string, trackingId: string, auto: string, opt_configObject?: {}): UniversalAnalytics.Tracker;
         (command: string, hitDetails: {}): void;
+        (command: string, event: string, ...args):void;
         create(trackingId: string, opt_configObject?: {}): UniversalAnalytics.Tracker;
         create(trackingId: string, auto: string, opt_configObject?: {}): UniversalAnalytics.Tracker;
         getAll(): UniversalAnalytics.Tracker[];
