@@ -1061,6 +1061,8 @@ declare module AceAjax {
 
         execCommand(command:string, args?: any);
 
+        setOptions(opts:any);
+
         /**
          * Sets a new key handler, such as "vim" or "windows".
          * @param keyboardHandler The new key handler
